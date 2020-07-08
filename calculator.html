@@ -8,9 +8,9 @@
 <body>
 <h1>Calculator</h1>
 
-<div  class="calculator">
+<div  class="js-calculator">
     <input type="number" id="number1" name="number1" oninput= "update(); show()" aria-label= "First number">
-    <select id="operator" name="operator" aria-label= "Choose an operation (sum by default)" >
+    <select id="operator" name="operator" aria-label= "Choose an operation (sum by default)" onchange= "update(); show()">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
