@@ -9,16 +9,16 @@
 <h1>Calculator</h1>
 
 <div  class="calculator">
-    <input type="number" id="number1" name="number1" oninput= "update()">
-    <select id="operator" name="operator">
+    <input type="number" id="number1" name="number1" oninput= "update(); show()" aria-label= "First number">
+    <select id="operator" name="operator" aria-label= "Choose an operation (sum by default)" >
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
     </select> 
-    <input type="number" id="number2" name="number2" oninput= "update()">
-    <input type="submit" value="=" name="=" onclick= "update(); show()">
-    <input id="result" style="background-color:lightgreen; border: solid seagreen; padding: 5px; border-radius: 3px;" name="Result"></input>
+    <input type="number" id="number2" name="number2" oninput= "update(); show()" aria-label= "Second number">
+    <input type="submit" value="=" name="=" onclick= "update(); show()" aria-label= "Click to get the result in the result field">
+    <input id="result" style="background-color:lightgreen; border: solid seagreen; padding: 5px; border-radius: 3px;" name="Result " aria-label= "Result field"></input>
 
 </div>
 
